@@ -84,4 +84,6 @@ module Chp1
   end
 
   (1..2).each { QuotePrinter.run }
+
+  require_relative "chp1/char_length"
 end

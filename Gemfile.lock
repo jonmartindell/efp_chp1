@@ -2,11 +2,15 @@ PATH
   remote: .
   specs:
     chp1 (0.1.0)
+      dispel (~> 0.0.7)
 
 GEM
   remote: https://rubygems.org/
   specs:
     coderay (1.1.0)
+    curses (1.0.1)
+    dispel (0.0.7)
+      curses
     method_source (0.8.2)
     pry (0.10.2)
       coderay (~> 1.1.0)
