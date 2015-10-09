@@ -1,4 +1,5 @@
 require "chp1/version"
+require "chp1/mad_lib"
 
 module Chp1
   class Prompter
@@ -38,7 +39,7 @@ module Chp1
     end
   end
 
-  (1..1).each { Greeter_v1.new(Prompter.new("What is your name?").prompt).greet }
+  #(1..1).each { Greeter_v1.new(Prompter.new("What is your name?").prompt).greet }
 
   class Greeter_v2
 
@@ -61,7 +62,7 @@ module Chp1
     end
   end
 
-  (1..1).each { Greeter_v2.greet }
+  #(1..1).each { Greeter_v2.greet }
 
   class CharCounter
     def initialize(word)
@@ -73,7 +74,7 @@ module Chp1
     end
   end
 
-  (1..1).each { CharCounter.new(Prompter.new("What is the input string?", true).prompt).report }
+  #(1..1).each { CharCounter.new(Prompter.new("What is the input string?", true).prompt).report }
 
   class QuotePrinter
     def self.run
@@ -83,7 +84,7 @@ module Chp1
     end
   end
 
-  (1..2).each { QuotePrinter.run }
+  #(1..2).each { QuotePrinter.run }
 
-  require_relative "chp1/char_length"
+  #require_relative "chp1/char_length"
 end
